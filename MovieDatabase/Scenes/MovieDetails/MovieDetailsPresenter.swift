@@ -30,7 +30,7 @@ class MovieDetailsPresenter: MvpPresenter<MovieDetailsView> {
         guard let movieId = movie?.id else {
             return
         }
-
+        
         let parameters = ["api_key": APIManager.shared.apiKey] as [String : Any]
         APIManager.shared.getCredits(movieId: movieId, parameters: parameters) { result, error in
             guard let result = result else {

@@ -28,7 +28,7 @@ extension APIManager{
         guard let url = URL(string: baseURLString)?.appendingPathComponent("/movie/popular"),
               let urlRequest = try? URLRequest(url: url, method: .get),
               let encodedUrlRequest = try? URLEncoding().encode(urlRequest, with: parameters) else {return}
-
+        
         AF.request(encodedUrlRequest)
             .responseJSON {
                 response in
@@ -43,15 +43,15 @@ extension APIManager{
                 case let .failure(err):
                     return completion(nil, err)
                 }
-
-        }
+                
+            }
     }
     
     func getGenres(parameters: [String : Any], completion: @escaping (_ results: [Genre]?, _ error: AFError?) -> Void ){
         guard let url = URL(string: baseURLString)?.appendingPathComponent("/genre/movie/list"),
               let urlRequest = try? URLRequest(url: url, method: .get),
               let encodedUrlRequest = try? URLEncoding().encode(urlRequest, with: parameters) else {return}
-
+        
         AF.request(encodedUrlRequest)
             .responseJSON {
                 response in
@@ -66,14 +66,14 @@ extension APIManager{
                 case let .failure(err):
                     return completion(nil, err)
                 }
-        }
+            }
     }
     
     func searchMovies(parameters: [String : Any], completion: @escaping (_ results: MovieModelResult?, _ error: AFError?) -> Void ){
         guard let url = URL(string: baseURLString)?.appendingPathComponent("/search/movie"),
               let urlRequest = try? URLRequest(url: url, method: .get),
               let encodedUrlRequest = try? URLEncoding().encode(urlRequest, with: parameters) else {return}
-
+        
         AF.request(encodedUrlRequest)
             .responseJSON {
                 response in
@@ -88,15 +88,15 @@ extension APIManager{
                 case let .failure(err):
                     return completion(nil, err)
                 }
-
-        }
+                
+            }
     }
     
     func getCredits(movieId: Int, parameters: [String : Any], completion: @escaping (_ results: [Cast]?, _ error: AFError?) -> Void ){
         guard let url = URL(string: baseURLString)?.appendingPathComponent("movie/\(movieId)/credits"),
               let urlRequest = try? URLRequest(url: url, method: .get),
               let encodedUrlRequest = try? URLEncoding().encode(urlRequest, with: parameters) else {return}
-
+        
         AF.request(encodedUrlRequest)
             .responseJSON {
                 response in
@@ -111,6 +111,6 @@ extension APIManager{
                 case let .failure(err):
                     return completion(nil, err)
                 }
-        }
+            }
     }
 }

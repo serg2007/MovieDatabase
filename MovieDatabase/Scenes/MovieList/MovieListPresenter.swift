@@ -12,14 +12,14 @@ enum State {
 }
 
 class MovieListPresenter: MvpPresenter<MovieListView> {
-
+    
     var moviesList = [MovieModel]()
     var genresList = [Genre]()
     var currentPage: Int = 1
     var isRequestStarted = false
     var state = State.regular
     var searchTimer: Timer?
-
+    
     private let service = APIManager.shared
     
     func selectedCell(withRow: Int) {
@@ -27,7 +27,7 @@ class MovieListPresenter: MvpPresenter<MovieListView> {
         let context = RouteContext(parameters)
         mvpView?.openChildScreen(.MovieDetail, fromStoryboard: .main, withContext: context)
     }
-
+    
     func doOnStart() {
         fetchGenres()
     }
@@ -95,5 +95,4 @@ class MovieListPresenter: MvpPresenter<MovieListView> {
             self.mvpView?.updateList()
         }
     }
-
 }

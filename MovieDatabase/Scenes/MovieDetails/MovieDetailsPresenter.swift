@@ -10,7 +10,7 @@ import Foundation
 class MovieDetailsPresenter: MvpPresenter<MovieDetailsView> {
     private let service = APIManager.shared
     
-    var movie: MovieModel?
+    private var movie: MovieModel?
     
     override func setContext(to context: RouteContext?) {
         guard let context = context else {
@@ -48,7 +48,7 @@ class MovieDetailsPresenter: MvpPresenter<MovieDetailsView> {
         mvpView?.updateView(casts: castDetail)
     }
     
-    func splitCasts(casts: [Cast]) -> String {
+    private func splitCasts(casts: [Cast]) -> String {
         let castsNames = casts.map { $0.name }
         return castsNames.joined(separator:", ")
     }

@@ -13,9 +13,12 @@ struct APIManager {
     static var shared: APIManager {
         return APIManager()
     }
+    private init() {}
     let baseImageURLString = "https://image.tmdb.org/t/p/original"
     let baseURLString = "https://api.themoviedb.org/3"
     let apiKey = "815b63b537c380370911f6cb083031b0"
+    
+    
 }
 
 

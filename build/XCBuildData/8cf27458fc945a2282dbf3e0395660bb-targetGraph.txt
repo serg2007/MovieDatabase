@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+MovieDatabase in MovieDatabase
+MovieDatabaseTests in MovieDatabase, depends on:
+MovieDatabase in MovieDatabase (explicit)
+MovieDatabaseUITests in MovieDatabase, depends on:
+MovieDatabase in MovieDatabase (explicit)

@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
+options: "89290a56665912e1fc92be3d11506830"
+build_time: [1620311608, 855491000]
+inputs:
+  "/Users/sergiysobol/Projects/MovieDatabase/Pods/PaginatedTableView/PaginatedTableView/Classes/PaginatedTableView.swift": [9223372036, 854775807]

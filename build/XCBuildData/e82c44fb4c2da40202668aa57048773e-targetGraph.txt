@@ -1,0 +1,16 @@
+Target dependency graph (6 targets)
+Alamofire in Pods
+PaginatedTableView in Pods
+SDWebImage in Pods
+netfox in Pods
+Pods-MovieDatabase in Pods, depends on:
+Alamofire in Pods (explicit)
+PaginatedTableView in Pods (explicit)
+SDWebImage in Pods (explicit)
+netfox in Pods (explicit)
+MovieDatabase in MovieDatabase, depends on:
+Pods-MovieDatabase in Pods (implicit dependency via file 'Pods_MovieDatabase.framework' in build phase 'Link Binary'
+Alamofire in Pods (implicit dependency via options '-framework Alamofire' in build setting 'OTHER_LDFLAGS'
+PaginatedTableView in Pods (implicit dependency via options '-framework PaginatedTableView' in build setting 'OTHER_LDFLAGS'
+SDWebImage in Pods (implicit dependency via options '-framework SDWebImage' in build setting 'OTHER_LDFLAGS'
+netfox in Pods (implicit dependency via options '-framework netfox' in build setting 'OTHER_LDFLAGS'

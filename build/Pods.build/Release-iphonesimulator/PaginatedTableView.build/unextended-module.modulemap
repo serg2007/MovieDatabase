@@ -1,0 +1,10 @@
+framework module PaginatedTableView {
+  umbrella header "PaginatedTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module PaginatedTableView.__Swift {
+    exclude header "PaginatedTableView-Swift.h"
+}

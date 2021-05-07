@@ -1,0 +1,10 @@
+framework module netfox {
+  umbrella header "netfox-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module netfox.__Swift {
+    exclude header "netfox-Swift.h"
+}

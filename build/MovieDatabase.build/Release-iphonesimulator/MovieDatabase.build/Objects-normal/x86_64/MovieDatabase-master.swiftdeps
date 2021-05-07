@@ -1,0 +1,12 @@
+version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
+options: "c3ea79948aeb5f59a89a9652c73c00c3"
+build_time: [1620311628, 633496000]
+inputs:
+  "/Users/sergiysobol/Projects/MovieDatabase/MovieDatabase/API/APIManager.swift": [9223372036, 854775807]
+  "/Users/sergiysobol/Projects/MovieDatabase/MovieDatabase/ViewController.swift": [9223372036, 854775807]
+  "/Users/sergiysobol/Projects/MovieDatabase/MovieDatabase/Views/DetailTextItemCell.swift": [9223372036, 854775807]
+  "/Users/sergiysobol/Projects/MovieDatabase/MovieDatabase/AppDelegate.swift": [9223372036, 854775807]
+  "/Users/sergiysobol/Projects/MovieDatabase/MovieDatabase/Views/DetailImageItemCell.swift": [9223372036, 854775807]
+  "/Users/sergiysobol/Projects/MovieDatabase/MovieDatabase/Views/MovieCell.swift": [9223372036, 854775807]
+  "/Users/sergiysobol/Projects/MovieDatabase/MovieDatabase/SceneDelegate.swift": [9223372036, 854775807]
+  "/Users/sergiysobol/Projects/MovieDatabase/MovieDatabase/DetailsViewController.swift": [9223372036, 854775807]
